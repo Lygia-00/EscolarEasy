@@ -8,8 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Dropdowns, popovers e tooltips -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>    
-</head>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Barra de navegação-->
@@ -42,6 +41,28 @@
             </ul>
           </div>
         </div>
-      </nav>    
+      </nav>
+      <!-- Content Grid-->
+      
+    <form class="align-items-center">
+      <div class="container">
+        <div class="row g-2">
+          <div class="col-4">
+            <label for="Nome" class="form-label">Nome Completo</label>
+            <input class="form-control" type="text" placeholder="" aria-label="Nome">
+          </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-4">
+                <label for="Nome" class="form-label">E-mail</label>
+                <input class="form-control" type="text" placeholder="" aria-label="Nome">
+            </div>
+        </div>
+        <div class="row g-2">
+          <div class="col-2"><button type="button" class="btn btn-danger" onclick="location.replace('home.html')">Cancelar</button></div>
+          <div class="col-2"><button type="submit" class="btn btn-primary mb-3">Salvar alterações</button></div>
+        </div>
+      </div>
+    </form>
 </body>
 </html>
