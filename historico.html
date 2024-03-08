@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico Acadêmico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Dropdowns, popovers e tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+	<script src="historicoacademico.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Escolar Easy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+			    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html">Informações Cadastrais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Informações Acadêmicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Histórico Acadêmico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lançar Notas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Sair</a>
+                    </li>
+				</ul>
+			</div> 
+        </div>
+    </nav>
+
+    <!-- Content Grid-->
+    <form class="needs-validation">
+        <div class="container">
+            <div class="row g-2">
+                <div class="col-4">
+                <div class="p-2">
+                    <label for="Nome" class="form-label">Nome Completo</label>
+                    <input class="form-control" type="text" placeholder="" aria-label="Nome" required>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-2">
+                    <label for="Certidao" class="form-label">Certidão de Nascimento ou Carteira de Identidade</label>
+                    <input class="form-control" type="text" placeholder="" aria-label="Certidao" required>
+                </div>
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-4">
+                <div class="p-2">
+                    <label for="E-mail" class="form-label">E-mail</label>
+                    <input class="form-control" type="text" placeholder="" aria-label="E-mail" required>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-2">
+                    <label for="FichaAcompanhamento" class="form-label">Ficha de Acompanhamento do Aluno</label>
+                    <input class="form-control" type="text" placeholder="" aria-label="FichaAcompanhamento" required>
+                </div>
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-4">
+                <div class="p-2">
+                  <label for="HistoricoAnterior" class="form-label">Históricos Escolares Anteriores (quando houver)</label>
+                  <input class="form-control" type="text" placeholder="" aria-label="HistoricoAnterior">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-2">
+                  <label for="BoletimAnterior" class="form-label">Boletim dos Anos Anteriores</label>
+                  <input class="form-control" type="text" placeholder="" aria-label="BoletimAnterior">
+                </div>
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-2"><button type="button" class="btn btn-danger" onclick="location.replace('home.html')">Cancelar</button></div>
+            <div class="col-2"><button type="submit" class="btn btn-primary mb-3">Salvar Alterações</button></div>
+        </div>
+    </form>
+</body>
+</html>
