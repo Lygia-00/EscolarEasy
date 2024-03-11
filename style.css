@@ -153,7 +153,24 @@ a{
   color:#3335a0;
 }
 
-#cpf, #cnpj {
+#cpf, #cnpj, #forn, #prof, #aluno {
     display: inline-block;
     justify-content: space-between;
+}
+
+.botao{
+    max-width: 150px;
+    width: 100%;
+    background: #444444;
+    color: #f9f9f9;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    float: right;
+    cursor: pointer;
+}
+
+.form-control:disabled{
+    background-color: #9E9E9E;
 }
